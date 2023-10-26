@@ -4,17 +4,30 @@
 <head>
     <title>Вічність</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20231010212109">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231026121234">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
     <div class="wrapper">
+        <div class="header">
+            <div class="header__logo">
+                <svg>
+                    <use href="img/icons/icons.svg#logo"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="background">
+            <picture>
+                <source data-srcset="img/main.webp" srcset="img/plug.png" type="image/webp">
+                <img data-src="img/main.jpg" src="img/plug.png" alt="Image">
+            </picture>
+        </div>
         <div class="page">
-            <div class="page__wrapper swiper-wrapper">
-                <div class="page__slide swiper-slide">
-                    <div class="page__section main">
+            <div class="page__wrapper">
+                <div class="page__screen screen">
+                    <div class="screen__body main">
                         <div class="main__logo logo-main animate">
                             <div class="logo-main__body">
                                 <div class="logo-main__light">
@@ -28,12 +41,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="who__bg bg">
-                            <picture>
-                                <source data-srcset="img/main.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/main.jpg" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
                         <p class="main__intro animate">
                             кожен з нас ― герой свого життя
                         </p>
@@ -43,14 +50,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="page__slide swiper-slide">
-                    <div class="page__section who">
-                        <div class="who__bg bg">
-                            <picture>
-                                <source data-srcset="img/main.webp" srcset="img/plug.png" type="image/webp">
-                                <img data-src="img/main.jpg" src="img/plug.png" alt="Image">
-                            </picture>
-                        </div>
+                <div class="page__screen screen">
+                    <dic class="screen__body who">
                         <h2 class="who__title title animate">хто вони — украінські герої?</h2>
                         <p class="who__desc desc animate">
                             Насамперед, це наші воїни,
@@ -61,10 +62,10 @@
                         <button type="button" class="who__btn btn animate">
                             <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
                         </button>
-                    </div>
+                    </dic>
                 </div>
-                <div class="page__slide swiper-slide">
-                    <div class="page__section warrior">
+                <div class="page__screen screen">
+                    <div class="screen__body warrior">
                         <div class="warrior__bg bg">
                             <picture>
                                 <source data-srcset="img/warrior.webp" srcset="img/plug.png" type="image/webp">
@@ -89,13 +90,317 @@
                         </button>
                     </div>
                 </div>
+                <div class="page__screen screen">
+                    <div class="screen__body tech">
+                        <div class="tech__slider">
+                            <div class="tech__wrapper">
+                                <div class="tech__slide">
+                                    <div class="tech__image">
+                                        <picture>
+                                            <source data-srcset="img/tech.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/tech.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="tech__slide">
+                                    <div class="tech__image">
+                                        <picture>
+                                            <source data-srcset="img/tech.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/tech.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="tech__slide">
+                                    <div class="tech__image">
+                                        <picture>
+                                            <source data-srcset="img/tech.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/tech.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tech__body">
+                            <h2 class="tech__title title animate">
+                                новітні технології
+                            </h2>
+                            <p class="tech__desc desc animate">
+                                та досвідчені майстри
+                                були залучені до створення
+                                пам'ятнику, щоб зафіксувати
+                                мить історії — реальну мить
+                                з життя нашого героя.
+                                Його запам'ятають саме таким.
+
+                            </p>
+                        </div>
+                        <button type="button" class="tech__btn btn animate">
+                            <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                        </button>
+                        <div class="tech__navigation navigation animate">
+                            <button type="button" class="navigation__prev">
+                                <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                            </button>
+                            <button type="button" class="navigation__next">
+                                <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen">
+                    <div class="screen__body realisation">
+                        <div class="realisation__bg bg">
+                            <picture>
+                                <source data-srcset="img/display.webp" srcset="img/plug.png" type="image/webp">
+                                <img data-src="img/display.jpg" src="img/plug.png" alt="Image">
+                            </picture>
+                        </div>
+                        <div class="realisation__body">
+                            <div class="realisation__model animate">
+                                <picture>
+                                    <source data-srcset="img/360.gif" srcset="img/plug.png" type="image/webp">
+                                    <img data-src="img/360.gif" src="img/plug.png" alt="Image">
+                                </picture>
+                            </div>
+                            <div class="realisation__content">
+                                <h2 class="realisation__title title animate">
+                                    достовірне
+                                    відтворення
+                                </h2>
+                                <p class="realisation__desc desc animate">
+                                    Пам’ятна скульптура створена за
+                                    актуальними антропометричними
+                                    даними та з урахуванням особливих
+                                    відмінностей, відомих про Героя.
+
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="realisation__btn btn animate">
+                            <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                        </button>
+                    </div>
+                </div>
+                <div class="page__screen screen">
+                    <div class="screen__body location">
+                        <div class="location__slider">
+                            <div class="location__wrapper">
+                                <div class="location__slide">
+                                    <div class="location__image">
+                                        <picture>
+                                            <source data-srcset="img/location.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/location.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="location__slide">
+                                    <div class="location__image">
+                                        <picture>
+                                            <source data-srcset="img/location.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/location.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                                <div class="location__slide">
+                                    <div class="location__image">
+                                        <picture>
+                                            <source data-srcset="img/location.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/location.jpg" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="location__body">
+                            <h2 class="location__title title animate">
+                                проект розміщення
+                            </h2>
+                            <p class="location__desc desc animate">
+                                Ми хочемо, щоб нашого Героя
+                                побачили якомога більше людей
+                                і пропонуємо декілька місць
+                                для встановлення пам’ятника
+                            </p>
+                        </div>
+                        <button type="button" class="location__btn btn animate">
+                            <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                        </button>
+                        <div class="location__navigation navigation animate">
+                            <button type="button" class="navigation__prev">
+                                <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                            </button>
+                            <button type="button" class="navigation__next">
+                                <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen">
+                    <div class="screen__body command">
+                        <div class="command__body">
+                            <div class="command__col" data-desk="persons, append">
+                                <h2 class="command__title title animate">команда майстрів</h2>
+                                <p class="command__desc desc animate">
+                                    Ми хочемо, щоб нашого Героя
+                                    побачили якомога більше людей
+                                    і пропонуємо декілька місць
+                                    для встановлення пам’ятника
+                                </p>
+                                <div class="command__persons animate" data-move="persons, 992">
+                                    <div class="command__wrapper">
+                                        <div class="command__slide">
+                                            <div class="command__name">Андрій Шуган</div>
+                                            <p class="command__about">
+                                                художник-дизайнер <br>
+                                                арт-директор проекту <br>
+                                                ТМ Andrew Shugan
+                                            </p>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__name">Андрій Шуган</div>
+                                            <p class="command__about">
+                                                художник-дизайнер <br>
+                                                арт-директор проекту <br>
+                                                ТМ Andrew Shugan
+                                            </p>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__name">Андрій Шуган</div>
+                                            <p class="command__about">
+                                                художник-дизайнер <br>
+                                                арт-директор проекту <br>
+                                                ТМ Andrew Shugan
+                                            </p>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__name">Андрій Шуган</div>
+                                            <p class="command__about">
+                                                художник-дизайнер <br>
+                                                арт-директор проекту <br>
+                                                ТМ Andrew Shugan
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="command__col">
+                                <div class="command__photos" data-mob="persons, append">
+                                    <div class="command__wrapper">
+                                        <div class="command__slide">
+                                            <div class="command__image">
+                                                <picture>
+                                                    <source data-srcset="img/Command/image1.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/Command/image1.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__image">
+                                                <picture>
+                                                    <source data-srcset="img/Command/image2.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/Command/image2.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__image">
+                                                <picture>
+                                                    <source data-srcset="img/Command/image3.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/Command/image3.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="command__slide">
+                                            <div class="command__image">
+                                                <picture>
+                                                    <source data-srcset="img/Command/image4.webp"
+                                                        srcset="img/plug.png" type="image/webp">
+                                                    <img data-src="img/Command/image4.jpg" src="img/plug.png"
+                                                        alt="Image">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="command__navigation navigation animate">
+                                        <button type="button" class="navigation__prev">
+                                            <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                                        </button>
+                                        <button type="button" class="navigation__next">
+                                            <picture><source srcset="img/arrow.webp" type="image/webp"><img src="img/arrow.png" alt="Icon"></picture>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page__screen screen">
+                    <div class="screen__body footer">
+                        <div class="footer__logo">
+                            <svg>
+                                <use href="img/icons/icons.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="footer__body">
+                            <div class="footer__contacts contacts">
+                                <h3 class="contacts__title">
+                                    з питаннями та пропозиціями <br>
+                                    зв’яжіться з нами:
+                                </h3>
+                                <a href="tel:+380123456789" class="contacts__link">+38012 3456789</a>
+                                <a href="mailto:info@vichnist.ua" class="contacts__link">info@vichnist.ua</a>
+                            </div>
+                            <div class="footer__right">2023© | ТОВ ВЧНСТ</div>
+                            <div class="footer__socials socials">
+                                <h3 class="socials__title">
+                                    слідкуйте за нами в мережі
+                                </h3>
+                                <div class="socials__body">
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="socials__link">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="page__scroll"></div>
         </div>
 
         
     </div>
 
-    <script src="js/app.min.js?_v=20231010212109"></script>
+    <script src="js/app.min.js?_v=20231026121234"></script>
 </body>
 
 </html>
