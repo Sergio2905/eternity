@@ -115,6 +115,7 @@ body._lock {
 
 .wrapper {
   min-height: 100vh;
+  height: var(--app-height);
   max-width: 100vw;
 }
 
@@ -309,10 +310,12 @@ body._lock {
 
 .page__screen {
   flex: 1 0 100%;
+  min-height: var(--app-height);
 }
 
 .page__screen:last-child {
-  flex: 1 1 auto;
+  flex: unset;
+  min-height: unset;
 }
 
 .page__scroll {
