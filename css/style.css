@@ -1020,7 +1020,6 @@ body._lock {
 .footer__logo {
   width: 300px;
   height: 150px;
-  min-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1210,6 +1209,11 @@ body._lock {
 
   .command__about {
     font-size: calc(1.125rem + 22 * (100vw - 20rem) / 1600);
+  }
+
+  .footer__logo {
+    width: calc(150px + 150 * (100vw - 320px) / 1600);
+    height: calc(75px + 75 * (100vw - 320px) / 1600);
   }
 
   .footer__title {
